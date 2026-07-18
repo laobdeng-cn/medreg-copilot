@@ -1,0 +1,2474 @@
+{
+  "dataset_version": "medreg-eval-v1-60",
+  "annotation_mode": "synthetic_regulatory_demo_with_expert_review_workflow",
+  "cases": [
+    {
+      "id": "EVAL-RET-001",
+      "task_type": "retrieval",
+      "title": "法规检索样本 1",
+      "input_text": "注册申报资料需要包含哪些文件",
+      "gold_labels": [
+        "samr-47-article-52"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 410
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 175
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-002",
+      "task_type": "retrieval",
+      "title": "法规检索样本 2",
+      "input_text": "医疗器械研制应遵循什么风险原则",
+      "gold_labels": [
+        "samr-47-article-24"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-24",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 427
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-24",
+          "samr-47-article-13",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 182
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-003",
+      "task_type": "retrieval",
+      "title": "法规检索样本 3",
+      "input_text": "附条件批准后如何持续管理风险",
+      "gold_labels": [
+        "samr-47-article-62"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-62",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 444
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-62",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 189
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-004",
+      "task_type": "retrieval",
+      "title": "法规检索样本 4",
+      "input_text": "注册材料真实性与可追溯要求",
+      "gold_labels": [
+        "samr-47-article-13"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 461
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-24",
+          "samr-47-article-13",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 196
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-005",
+      "task_type": "retrieval",
+      "title": "法规检索样本 5",
+      "input_text": "产品风险分析资料的提交依据",
+      "gold_labels": [
+        "samr-47-article-52"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-52",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 478
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 203
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-006",
+      "task_type": "retrieval",
+      "title": "法规检索样本 6",
+      "input_text": "严重疾病器械附条件批准条件",
+      "gold_labels": [
+        "samr-47-article-61"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-52",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 495
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-61",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 210
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-007",
+      "task_type": "retrieval",
+      "title": "法规检索样本 7",
+      "input_text": "产品安全有效质量可控的基本要求",
+      "gold_labels": [
+        "samr-47-article-13"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 512
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 217
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-008",
+      "task_type": "retrieval",
+      "title": "法规检索样本 8",
+      "input_text": "上市后受益风险数据如何监测",
+      "gold_labels": [
+        "samr-47-article-62"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-62",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 529
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-62",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 224
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-009",
+      "task_type": "retrieval",
+      "title": "法规检索样本 9",
+      "input_text": "首次注册申请前需要完成哪些准备",
+      "gold_labels": [
+        "samr-47-article-52"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 546
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 231
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-010",
+      "task_type": "retrieval",
+      "title": "法规检索样本 10",
+      "input_text": "技术要求和检验报告属于什么资料",
+      "gold_labels": [
+        "samr-47-article-52"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-52",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 563
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-52",
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 238
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-011",
+      "task_type": "retrieval",
+      "title": "法规检索样本 11",
+      "input_text": "风险管理原则对应哪一条法规",
+      "gold_labels": [
+        "samr-47-article-24"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-24",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 580
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-52",
+          "samr-47-article-61",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-24",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 245
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-RET-012",
+      "task_type": "retrieval",
+      "title": "法规检索样本 12",
+      "input_text": "附条件批准研究资料提交时限",
+      "gold_labels": [
+        "samr-47-article-61"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-24",
+          "samr-47-article-61",
+          "samr-47-article-52",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 597
+      },
+      "candidate": {
+        "ranked_labels": [
+          "samr-47-article-13",
+          "samr-47-article-61",
+          "samr-47-article-24",
+          "samr-47-article-52",
+          "samr-47-article-62",
+          "samr-47-article-8",
+          "samr-47-article-17",
+          "samr-47-article-31",
+          "samr-47-article-44",
+          "samr-47-article-58"
+        ],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 252
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "第47号令",
+        "法规检索"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-001",
+      "task_type": "citation",
+      "title": "引用完整性样本 1",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681",
+        "article-62@8296-8394"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 445
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681",
+          "article-62@8296-8394"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 190
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-002",
+      "task_type": "citation",
+      "title": "引用完整性样本 2",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 458
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 196
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-003",
+      "task_type": "citation",
+      "title": "引用完整性样本 3",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 471
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 202
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-004",
+      "task_type": "citation",
+      "title": "引用完整性样本 4",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681",
+        "article-62@8296-8394"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 484
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681",
+          "article-62@8296-8394"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 208
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-005",
+      "task_type": "citation",
+      "title": "引用完整性样本 5",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 497
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 214
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-006",
+      "task_type": "citation",
+      "title": "引用完整性样本 6",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 510
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 220
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-007",
+      "task_type": "citation",
+      "title": "引用完整性样本 7",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681",
+        "article-62@8296-8394"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 523
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681",
+          "article-62@8296-8394"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 226
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-008",
+      "task_type": "citation",
+      "title": "引用完整性样本 8",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 536
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 232
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-009",
+      "task_type": "citation",
+      "title": "引用完整性样本 9",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 549
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 238
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-010",
+      "task_type": "citation",
+      "title": "引用完整性样本 10",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681",
+        "article-62@8296-8394"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 562
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681",
+          "article-62@8296-8394"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 244
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-011",
+      "task_type": "citation",
+      "title": "引用完整性样本 11",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 575
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002",
+          "article-52@6474-6681"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 250
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CIT-012",
+      "task_type": "citation",
+      "title": "引用完整性样本 12",
+      "input_text": "核对草稿事实主张是否具有法规原文、条款路径和字符坐标。",
+      "gold_labels": [
+        "article-13@1812-1917",
+        "article-24@2921-3002",
+        "article-52@6474-6681"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-61@8182-8295"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 588
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "article-13@1812-1917",
+          "article-24@2921-3002"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 256
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "引用",
+        "字符坐标",
+        "可追溯"
+      ]
+    },
+    {
+      "id": "EVAL-CON-001",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 1",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "product_name"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 520
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "product_name"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 215
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "product_name"
+      ]
+    },
+    {
+      "id": "EVAL-CON-002",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 2",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "model_specification",
+        "performance"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "model_specification"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 531
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "model_specification",
+          "performance"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 223
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "model_specification",
+        "performance"
+      ]
+    },
+    {
+      "id": "EVAL-CON-003",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 3",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "intended_use",
+        "warnings"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "intended_use",
+          "unreadable_evidence"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 542
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "intended_use",
+          "warnings"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 231
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "intended_use",
+        "warnings"
+      ]
+    },
+    {
+      "id": "EVAL-CON-004",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 4",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "performance",
+        "product_name"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 553
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "performance"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 239
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "performance",
+        "product_name"
+      ]
+    },
+    {
+      "id": "EVAL-CON-005",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 5",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "warnings"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "warnings"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 564
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "warnings"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 247
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "warnings"
+      ]
+    },
+    {
+      "id": "EVAL-CON-006",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 6",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "product_name",
+        "intended_use"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "product_name"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 575
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "product_name",
+          "intended_use"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 255
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "product_name",
+        "intended_use"
+      ]
+    },
+    {
+      "id": "EVAL-CON-007",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 7",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "model_specification",
+        "performance"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 586
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "model_specification",
+          "performance",
+          "unreadable_evidence"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 263
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "model_specification",
+        "performance"
+      ]
+    },
+    {
+      "id": "EVAL-CON-008",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 8",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "intended_use",
+        "warnings"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "intended_use"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 597
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "intended_use",
+          "warnings"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 271
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "intended_use",
+        "warnings"
+      ]
+    },
+    {
+      "id": "EVAL-CON-009",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 9",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "performance"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "performance",
+          "unreadable_evidence"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 608
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "performance"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 279
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "performance"
+      ]
+    },
+    {
+      "id": "EVAL-CON-010",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 10",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "warnings",
+        "model_specification"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 619
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "warnings"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 287
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "warnings",
+        "model_specification"
+      ]
+    },
+    {
+      "id": "EVAL-CON-011",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 11",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "product_name",
+        "intended_use"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "product_name"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 630
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "product_name",
+          "intended_use"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 295
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "product_name",
+        "intended_use"
+      ]
+    },
+    {
+      "id": "EVAL-CON-012",
+      "task_type": "conflict",
+      "title": "跨文档冲突样本 12",
+      "input_text": "比较技术要求、风险分析和说明书中的受控字段差异。",
+      "gold_labels": [
+        "model_specification",
+        "performance"
+      ],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [
+          "model_specification"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 641
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [
+          "model_specification",
+          "performance"
+        ],
+        "fields": [],
+        "valid_json": null,
+        "adopted": null,
+        "latency_ms": 303
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "一致性",
+        "model_specification",
+        "performance"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-001",
+      "task_type": "schema",
+      "title": "结构化输出样本 1",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections"
+        ],
+        "valid_json": false,
+        "adopted": null,
+        "latency_ms": 470
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 205
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-002",
+      "task_type": "schema",
+      "title": "结构化输出样本 2",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 485
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 212
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-003",
+      "task_type": "schema",
+      "title": "结构化输出样本 3",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 500
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 219
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-004",
+      "task_type": "schema",
+      "title": "结构化输出样本 4",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 515
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 226
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-005",
+      "task_type": "schema",
+      "title": "结构化输出样本 5",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims"
+        ],
+        "valid_json": false,
+        "adopted": null,
+        "latency_ms": 530
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 233
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-006",
+      "task_type": "schema",
+      "title": "结构化输出样本 6",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 545
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 240
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-007",
+      "task_type": "schema",
+      "title": "结构化输出样本 7",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 560
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 247
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-008",
+      "task_type": "schema",
+      "title": "结构化输出样本 8",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 575
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 254
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-009",
+      "task_type": "schema",
+      "title": "结构化输出样本 9",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": false,
+        "adopted": null,
+        "latency_ms": 590
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 261
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-010",
+      "task_type": "schema",
+      "title": "结构化输出样本 10",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 605
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 268
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-011",
+      "task_type": "schema",
+      "title": "结构化输出样本 11",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 620
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 275
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-SCH-012",
+      "task_type": "schema",
+      "title": "结构化输出样本 12",
+      "input_text": "验证 Agent 输出章节、主张、证据标记和受控术语结构。",
+      "gold_labels": [],
+      "required_fields": [
+        "title",
+        "summary",
+        "sections",
+        "claims",
+        "bilingual_terms"
+      ],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims",
+          "bilingual_terms"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 635
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [
+          "title",
+          "summary",
+          "sections",
+          "claims"
+        ],
+        "valid_json": true,
+        "adopted": null,
+        "latency_ms": 282
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "JSON Schema",
+        "结构化输出"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-001",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 1",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 560
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 225
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-002",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 2",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 572
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 233
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-003",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 3",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 584
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 241
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-004",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 4",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 596
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 249
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-005",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 5",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 608
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 257
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-006",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 6",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 620
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 265
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-007",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 7",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 632
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 273
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-008",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 8",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 644
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 281
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-009",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 9",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 656
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 289
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-010",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 10",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 668
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 297
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-011",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 11",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 680
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 305
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    },
+    {
+      "id": "EVAL-ADO-012",
+      "task_type": "adoption",
+      "title": "人工采纳演示样本 12",
+      "input_text": "演示审阅人根据事实支持、引用完整性和使用限制作出采纳决定。",
+      "gold_labels": [],
+      "required_fields": [],
+      "baseline": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": false,
+        "latency_ms": 692
+      },
+      "candidate": {
+        "ranked_labels": [],
+        "labels": [],
+        "fields": [],
+        "valid_json": null,
+        "adopted": true,
+        "latency_ms": 313
+      },
+      "annotation_status": "curated_demo",
+      "tags": [
+        "Human-in-the-loop",
+        "演示采纳"
+      ]
+    }
+  ]
+}

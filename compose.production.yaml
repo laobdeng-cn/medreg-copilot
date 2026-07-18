@@ -1,0 +1,311 @@
+name: medreg-prod
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+x-backend-environment: &backend-environment
+  APP_NAME: MedReg Copilot
+  APP_ENV: production
+  API_PREFIX: /api/v1
+  APP_CORS_ORIGINS: '${APP_CORS_ORIGINS:-[]}'
+  APP_ALLOWED_HOSTS: '${APP_ALLOWED_HOSTS:-["localhost","127.0.0.1"]}'
+  DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+  REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+  MINIO_ENDPOINT: minio:9000
+  MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
+  MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
+  MINIO_BUCKET: ${MINIO_BUCKET:-medreg-documents}
+  MINIO_SECURE: "false"
+  QDRANT_URL: http://qdrant:6333
+  QDRANT_COLLECTION: ${QDRANT_COLLECTION:-medreg_legal_chunks_v1}
+  QDRANT_API_KEY: ${QDRANT_API_KEY}
+  NEO4J_URI: bolt://neo4j:7687
+  NEO4J_USER: neo4j
+  NEO4J_PASSWORD: ${NEO4J_PASSWORD}
+  NEO4J_DATABASE: neo4j
+  EMBEDDING_DENSE_MODEL: ${EMBEDDING_DENSE_MODEL:-BAAI/bge-small-zh-v1.5}
+  EMBEDDING_SPARSE_MODEL: ${EMBEDDING_SPARSE_MODEL:-Qdrant/bm25}
+  EMBEDDING_CACHE_DIR: /var/cache/medreg-fastembed
+  DEEPSEEK_API_KEY_FILE: /run/secrets/deepseek_api_key
+  DEEPSEEK_BASE_URL: ${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+  DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-v4-flash}
+  DEEPSEEK_TIMEOUT_SECONDS: ${DEEPSEEK_TIMEOUT_SECONDS:-45}
+  DOCUMENT_MAX_UPLOAD_BYTES: ${DOCUMENT_MAX_UPLOAD_BYTES:-20971520}
+  DOCUMENT_PARSE_STALE_AFTER_SECONDS: ${DOCUMENT_PARSE_STALE_AFTER_SECONDS:-300}
+  OFFICIAL_FETCH_TIMEOUT_SECONDS: ${OFFICIAL_FETCH_TIMEOUT_SECONDS:-20}
+  OFFICIAL_FETCH_ALLOWED_HOSTS: '${OFFICIAL_FETCH_ALLOWED_HOSTS:-["samr.gov.cn","nmpa.gov.cn"]}'
+
+x-backend-service: &backend-service
+  image: medreg-api:${MEDREG_IMAGE_TAG:-local}
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  environment: *backend-environment
+  secrets:
+    - deepseek_api_key
+  volumes:
+    - embedding_cache:/var/cache/medreg-fastembed
+  networks:
+    - edge
+    - data
+  init: true
+  security_opt:
+    - no-new-privileges:true
+  logging: *default-logging
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  redis:
+    image: redis:7.4-alpine
+    command:
+      - sh
+      - -c
+      - exec redis-server --appendonly yes --requirepass "$$REDIS_PASSWORD"
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    volumes:
+      - redis_data:/data
+    networks:
+      - data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a $$REDIS_PASSWORD ping | grep -q PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - minio_data:/data
+    networks:
+      - data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  qdrant:
+    image: qdrant/qdrant:v1.15.4
+    environment:
+      QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY}
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - data
+    healthcheck:
+      test: ["CMD", "/bin/bash", "-c", "</dev/tcp/127.0.0.1/6333"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD}
+    volumes:
+      - neo4j_data:/data
+    networks:
+      - data
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:7474"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 25s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+  migration:
+    <<: *backend-service
+    command: ["alembic", "upgrade", "head"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *backend-service
+    command:
+      - uvicorn
+      - medreg.main:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8200"
+      - --workers
+      - "${WEB_CONCURRENCY:-2}"
+      - --proxy-headers
+      - --forwarded-allow-ips
+      - "*"
+    expose:
+      - "8200"
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    pids_limit: 256
+    stop_grace_period: 30s
+    depends_on:
+      migration:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+    restart: unless-stopped
+
+  worker:
+    <<: *backend-service
+    command:
+      - celery
+      - -A
+      - medreg.core.celery_app:celery_app
+      - worker
+      - --loglevel=INFO
+      - --concurrency=${CELERY_CONCURRENCY:-2}
+    read_only: true
+    tmpfs:
+      - /tmp:size=512m,mode=1777
+    pids_limit: 512
+    stop_grace_period: 60s
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; os.kill(1, 0)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    depends_on:
+      migration:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+    restart: unless-stopped
+
+  beat:
+    <<: *backend-service
+    command:
+      - celery
+      - -A
+      - medreg.core.celery_app:celery_app
+      - beat
+      - --loglevel=INFO
+      - --schedule=/tmp/celerybeat-schedule
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    pids_limit: 128
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; os.kill(1, 0)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    depends_on:
+      migration:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    image: medreg-web:${MEDREG_IMAGE_TAG:-local}
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_BASE_URL: /api/v1
+    ports:
+      - ${MEDREG_HTTP_BIND:-127.0.0.1}:${MEDREG_HTTP_PORT:-8080}:8080
+    networks:
+      - edge
+    depends_on:
+      api:
+        condition: service_healthy
+    pids_limit: 128
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+
+volumes:
+  postgres_data:
+    name: medreg-prod-postgres-data
+  redis_data:
+    name: medreg-prod-redis-data
+  minio_data:
+    name: medreg-prod-minio-data
+  qdrant_data:
+    name: medreg-prod-qdrant-data
+  neo4j_data:
+    name: medreg-prod-neo4j-data
+  embedding_cache:
+    name: medreg-prod-embedding-cache
+
+networks:
+  edge:
+    name: medreg-prod-edge
+  data:
+    name: medreg-prod-data
+    internal: true
+
+secrets:
+  deepseek_api_key:
+    file: ${DEEPSEEK_API_KEY_FILE:-./secrets/production/deepseek_api_key}
